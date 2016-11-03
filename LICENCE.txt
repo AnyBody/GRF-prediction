@@ -1,0 +1,32 @@
+Download of modified or new models from AnyScript.org – Professional License: 
+=============================================================================
+
+Grant of License 
+----------------
+You warrant that you have a valid license for the AnyBody Modeling System V. 6.0.x (AMS).
+
+If you do not have a valid license then please visit www.anybodytech.com and request a license.
+
+You accept that your access to AnyScript.org is subject to the decision of Anybody Technology A/S. 
+Anybody Technology A/S does not warrant the availability or accessibility during or for any 
+specific period of time.
+
+You are at all times obliged to ensure that your use of data distributed under the 
+Professional License of AnyScript.org is in compliance with the terms of this License 
+and the End User License Agreement for the AnyBody Modeling System.
+
+Risk of use
+-----------
+You acknowledge that you are aware that the data contained in the repository stems from many 
+different sources and constitute consolidated research data or refinements hereof.
+
+You bear the full risk and any economic consequences of the use of the models and accept 
+that you have no claims against AnyBody Technology A/S in this respect even if AnyBody 
+Technology A/S, its officers or agents was informed that a loss on the Customer’s part 
+might arise. You are strongly advised not to make any decisions based on the use of the 
+models without expert advice and prior real life testing. 
+
+You accept that the data is likely to be incomplete and may be false, even if AnyBody 
+Technology A/S has taken reasonable steps to avoid this, and that the data are provided 
+“as is” and that AnyBody Technology A/S grants no warranty or assumes no liability for 
+the correctness of the data.
