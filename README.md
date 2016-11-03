@@ -226,4 +226,5 @@ foot_ref:
 
 ### References:
 Fluit, R., Andersen, M.S., Kolk, S., Verdonschot, N., Koopman, H.F.J.M., 2014. Prediction of ground reaction forces and moments during various activities of daily living. J. Biomech. 47, 2321–2329.
+
 Jung, Y., Jung, M., Lee, K., Koo, S., 2014. Ground reaction force estimation using an insole-type pressure mat and joint kinematics during walking. J. Biomech. 47, 2693–2699.
