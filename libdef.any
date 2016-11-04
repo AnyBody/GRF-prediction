@@ -1,0 +1,3 @@
+// Please change this to emsure it points to the body model 
+// repository you want to use. 
+#include "<ANYBODY_PATH_INSTALLDIR>/AMMR/Application/libdef.any"
