@@ -6,24 +6,16 @@ Mocap Example
 
 ![image](https://cloud.githubusercontent.com/assets/1038978/19969105/9a7834b6-a1d7-11e6-8880-26bb8fbc489e.png)
 
-Motion capture data is often recorded without force plates. In traditional inverse dynamics, this would
-make it impossible to perform a kinetic analysis. However, AnyBody has the possibility to predict ground 
-reaction forces (GRF), so you make inverse dynamics models based on recorded motion without GRF force 
-measurement (Fluit et al., 2014; Jung et al., 2014).'
+Motion capture data is often recorded without force plates. In traditional inverse dynamics, this would make it impossible to perform a dynamic analysis. However, AnyBody has the possibility to predict ground reaction forces (GRF), so you can make inverse dynamics models based on recorded motion without GRF force measurement (Fluit et al., 2014; Jung et al., 2014).
 
-GRF prediction relies on conditional contacts added to the feet of the model. The conditional contacts 
-work as force actuators to generate the normal and frictional forces necessary to balance model. Mathematically,
-the actuators are modelled similarly to muscles and the contact forces are determined by the muscle recruitment 
-optimization. The effect is that the model will utilize the ground reactions if that can minimize the muscle activity.
+GRF prediction relies on conditional contacts added to the feet of the model. The conditional contacts work as force actuators to generate the normal and frictional forces necessary to balance model. Mathematically, the actuators are modeled similarly to muscles, and the muscle recruitment optimization determines the contact forces. The effect is that the model will utilize the ground reactions if that can minimize the muscle activity.
 
-Adding conditional contacts to a model can be rather complex, but we have created an anyscript class template 
-that makes the process much easier. The class template will generate all the necessary AnyScript code. Thus, 
-adding GRF prediction is similar to adding force plates to a model.
+Adding conditional contacts to a model can be rather complex, but we have created an AnyScript class template that makes the process much easier. The class template will generate all the necessary AnyScript code. Thus, adding GRF prediction is similar to adding force plates to a model.
 
-This new functionality is not yet released to the AnyBody Managed Model Repository (AMMR). The files needed for 
-this to work must be downloaded separately. 
+This new functionality is not yet released to the AnyBody Managed Model Repository (AMMR). The files needed for this to work must be downloaded separately.
 
 The following section illustrates how to add the code to an existing mocap model.
+
 
 ## Adding ground force prediction to a mocap model.
 
@@ -31,7 +23,7 @@ The following section illustrates how to add the code to an existing mocap model
 
 The following shows how to add ground reaction force prediction to a mocap example application from AMMR. 
 
-1. Download the files from this folder and place in the same directory as the main file. '
+1. Download the files from this folder and place them in the same directory as the main file. 
 
 ![image](https://cloud.githubusercontent.com/assets/1038978/19969138/ba3a37f4-a1d7-11e6-9998-5b76ecaf4de2.png)
 
@@ -42,7 +34,7 @@ The following shows how to add ground reaction force prediction to a mocap examp
    ```
 
 ### Removing the force plates
-Next we must remove the force plates which are used by default by the mocap model. 
+Next, we must delete the force plates which are used by default by the mocap model. 
 Open the “MoCapModel\Model\Environment.any”  and comment line 20, which will exclude the force plates:
 
 ```c++
@@ -53,12 +45,9 @@ Open the “MoCapModel\Model\Environment.any”  and comment line 20, which will
 
 ### Adding the new GRF prediction classes
 
-The next step is to use the class template that creates the anyscript code for the GRF prediction. The 
-`GRFPrediction/` directory you unzipped earlier also contains an example of such a file. So we are just 
-going to use that. 
+The next step is to use the class template that creates the AnyScript code for the GRF prediction. The `GRFPrediction/` directory you unzipped earlier also contains an example of such a file. So we are just going to use that.
 
-We will add the code to the `ModelEnvironmentConnection` model folder, but the code should only be included
-in the  Inverse Dynamic part of the model. So add the following (marked with red) around line 64 in the main file: 
+We will add the code to the `ModelEnvironmentConnection` model folder, but the code should only be included in the Inverse Dynamic part of the model. So add the following (marked with red) around line 64 in the main file:
 
 ```c++
 #if InverseDynamicModel
@@ -71,15 +60,8 @@ Main.Studies.InverseDynamicStudy.ModelEnvironmentConnection = {
 
 ### Setting up new residuals (Hand of God)
 
-We are going to look at the `GRF_example.any` file later, but adding conditional contacts to the feet is not enough. 
-The mocap model comes with ‘hand of God’ reactions applied to the pelvis. These are the reactions that carry any 
-inconsistencies between the model and force plate data and they must be removed for ground reaction force prediction. 
-Instead, we apply another type of residuals to the model, so the solver does not fail if the model fails to balance. 
-These residuals are implemented as actuators from pelvis to the global reference frame. Mathematically, 
-these actuators are also implemented similar to muscles. However, they are very weak, so the recruitment 
-solver will only activate them if nothing else can balance the model. The file `WeakResiduals.any` does the 
-job of removing the ‘Hand of God’ and adding the new, weak residuals. Please make the following change in the 
-main file (marked with red):
+We are going to look at the `GRF_example.any` file later, but adding conditional contacts to the feet is not enough. The mocap model comes with ‘hand of God’ reactions applied to the pelvis. These are the reactions that carry any inconsistencies between the model and force plate data, and they must be removed for ground reaction force prediction. Instead, we apply another type of residuals to the model, so the solver does not fail if the model fails to balance. These residuals are implemented as actuators from pelvis to the global reference frame. Mathematically, these actuators are also implemented similarly to how muscles work. However, they are very weak, so the recruitment solver will only activate them if nothing else can balance the model. The file `WeakResiduals.any` does the job of removing the ‘Hand of God’ and adding the new, weak residuals. Please make the following change in the main file (marked with red):
+
 
 ```c++
 #if InverseDynamicModel
