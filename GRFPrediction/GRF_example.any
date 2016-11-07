@@ -45,6 +45,7 @@
       [ LimitDistLow = -0.10;               ]   
       [ LimitDistHigh = 0.04;               ]
       [ LimitVelHigh = 0.8;                 ]
+      [ GroundVelocity = {0.0, 0.0, 0.0};   ]
       [ Radius = 10;                        ]
       [ Strength = 200;                     ]
       [ FrictionCoefficient = 0.5;          ]

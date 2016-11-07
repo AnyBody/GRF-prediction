@@ -24,7 +24,7 @@ AnyFolder Push ={
   
   AnyVar UserDefinedDistMeasure=LinMeasureOrg0.Pos[0];
   AnyVar RadiusMeasure=sqrt(LinMeasureOrg1.Pos[0]^2+LinMeasureOrg2.Pos[0]^2);
-  AnyVar UserDefinedVelMeasure = vnorm(LinS.Vel,2);
+  AnyVar UserDefinedVelMeasure = vnorm(LinS.Vel-.UserDefinedGroundVel,2);
   
   AnyFloatVar LowerThanHighDistLimit = ltfun(UserDefinedDistMeasure,.UserDefinedDistLimitHigh);
   AnyFloatVar GreaterThanLowDistLimit = gtfun(UserDefinedDistMeasure,.UserDefinedDistLimitLow);

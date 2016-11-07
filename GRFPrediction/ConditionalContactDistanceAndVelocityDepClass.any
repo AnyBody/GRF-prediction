@@ -16,6 +16,7 @@
     //high limit for the strength measure function, if the velocity measured is above this val. the strength will be zero
     #var AnyVar UserDefinedVelLimitHigh; 
     
+    #var AnyVec3 UserDefinedGroundVel = {0,0,0};
     
     #if (DisplayTriggerVolume)
     BaseObject = {
