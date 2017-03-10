@@ -1,32 +1,21 @@
-Download of modified or new models from AnyScript.org – Professional License: 
-=============================================================================
+ 
+                             License Certificate
 
-Grant of License 
-----------------
-You warrant that you have a valid license for the AnyBody Modeling System V. 6.0.x (AMS).
+Use of this source code and material is coverned by the AnyBody Technology A/S
+Software License Agreement under the same terms as the "AnyBody Managed Model 
+Repository" (AMMR) stated in the Agreement.
 
-If you do not have a valid license then please visit www.anybodytech.com and request a license.
+See: https://www.anybodytech.com/legal/software-license-agreement/
 
-You accept that your access to AnyScript.org is subject to the decision of Anybody Technology A/S. 
-Anybody Technology A/S does not warrant the availability or accessibility during or for any 
-specific period of time.
+One exception applies. It is allowed to create and modify Forks (i.e. copies) of
+this repository on GitHub.com provided that the 'Fork':
 
-You are at all times obliged to ensure that your use of data distributed under the 
-Professional License of AnyScript.org is in compliance with the terms of this License 
-and the End User License Agreement for the AnyBody Modeling System.
+* is created with GitHub's Fork system, so they are tracked by the WebUI.
+* is forked from the original repository hosted at https://github.com/anybody
+* retains this License Certificate or any other licences it may contain.
 
-Risk of use
------------
-You acknowledge that you are aware that the data contained in the repository stems from many 
-different sources and constitute consolidated research data or refinements hereof.
+Contributing back to the orignal repository requires that contributor agrees to
+and signs the AnyScript Contributor License Agreement.
+See https://anyscript.org/cla
 
-You bear the full risk and any economic consequences of the use of the models and accept 
-that you have no claims against AnyBody Technology A/S in this respect even if AnyBody 
-Technology A/S, its officers or agents was informed that a loss on the Customer’s part 
-might arise. You are strongly advised not to make any decisions based on the use of the 
-models without expert advice and prior real life testing. 
-
-You accept that the data is likely to be incomplete and may be false, even if AnyBody 
-Technology A/S has taken reasonable steps to avoid this, and that the data are provided 
-“as is” and that AnyBody Technology A/S grants no warranty or assumes no liability for 
-the correctness of the data.
+Copyright 2017, AnyBody Technology. All rights reserved.
