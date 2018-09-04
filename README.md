@@ -1,6 +1,7 @@
 GROUND REACTION FORCE PREDICTION
 ================================
-Mocap Example
+
+> **Note**: This guide is deprecated since Ground Reaction Prediction is now part of the AMMR. Please see the [MoCap GRF prediction example](https://anyscript.org/ammr-doc/auto_examples/Mocap/plot_Plug-in-gait_Simple_FullBody_GRFPrediction.html). 
 
 ## Introduction
 
