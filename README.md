@@ -22,13 +22,15 @@ The following section illustrates how to add the code to an existing mocap model
 
 ### Including the class templates
 
-The following shows how to add ground reaction force prediction to a mocap example application from AMMR. 
+> **Note**: This step is no longer necessary. As of AMMR v2.1  the Ground Reaction force class templates are part the model repository. See the [MoCap GRF prediction example](https://anyscript.org/ammr-doc/auto_examples/Mocap/plot_Plug-in-gait_Simple_FullBody_GRFPrediction.html). 
 
-1. Download the files from this folder and place them in the same directory as the main file. 
+~~The following shows how to add ground reaction force prediction to a mocap example application from AMMR.~~
+
+1. ~~Download the files from this folder and place them in the same directory as the main file.~~
 
 ![image](https://cloud.githubusercontent.com/assets/1038978/19969138/ba3a37f4-a1d7-11e6-9998-5b76ecaf4de2.png)
 
-2. Open the main file of your model and add the following to the top of the main file (MoCap_FullBody.main.any):
+2. ~~Open the main file of your model and add the following to the top of the main file (MoCap_FullBody.main.any):~~
    ```c++
    // Include the classes for Ground Reaction Force Prediction
    #include "GRFPrediction/FootPlateConditionalContact.any"
