@@ -1,7 +1,7 @@
 GROUND REACTION FORCE PREDICTION
 ================================
 
-> **Note**: This guide is deprecated since Ground Reaction Prediction is now part of the AMMR. Please see the [MoCap GRF prediction example](https://anyscript.org/ammr-doc/auto_examples/Mocap/plot_Plug-in-gait_Simple_FullBody_GRFPrediction.html). 
+> :warning: **Note**: This guide is deprecated since Ground Reaction Prediction is now part of the AMMR. Please see the [MoCap GRF prediction example](https://anyscript.org/ammr-doc/auto_examples/Mocap/plot_Plug-in-gait_Simple_FullBody_GRFPrediction.html). 
 
 ## Introduction
 
@@ -22,7 +22,7 @@ The following section illustrates how to add the code to an existing mocap model
 
 ### Including the class templates
 
-> **Note**: This step is no longer necessary. As of AMMR v2.1  the Ground Reaction force class templates are part the model repository. See the [MoCap GRF prediction example](https://anyscript.org/ammr-doc/auto_examples/Mocap/plot_Plug-in-gait_Simple_FullBody_GRFPrediction.html). 
+:warning: **Note: This step is no longer necessary. As of AMMR v2.1  the Ground Reaction force class templates are part the model repository. See the [MoCap GRF prediction example](https://anyscript.org/ammr-doc/auto_examples/Mocap/plot_Plug-in-gait_Simple_FullBody_GRFPrediction.html).** 
 
 ~~The following shows how to add ground reaction force prediction to a mocap example application from AMMR.~~
 
